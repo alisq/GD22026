@@ -1,6 +1,55 @@
+.container {
+    
+    background:rgba(0,255,0,0.2);
+    width:1200px;
+    margin:auto;
+    display:grid;
+    
+}
+
+        .collection {
+            min-height:100px;
+            display:grid;
+            grid-template-columns:1fr 2fr;
+
+            
+        }
+
+
+
+            .collection_sidebar {
+                background:rgba(255,0,0,0.2);
+                min-height:100px;
+                margin:20px;
+
+            }
+
+            .collection_gallery {
+                
+                min-height:100px;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap:20px;
+                margin:20px;
+
+            }
+
+            .img_placeholder {
+                width:150px;
+                height:100px;
+                background:blue;
+            }
+
+
 .header {
     min-height:400px;
     background:red;
+     grid-column: span 4;
+}
+
+.second {
+    min-height:400px;
+    background:green;
 }
 
 .square {
