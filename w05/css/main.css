@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Juncture';
+    src: url('fonts/Juncture-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Juncture';
+    src: url('fonts/Juncture-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Juncture';
+    src: url('fonts/Juncture-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+img {
+    width:100%;
+    
+}
+
+
+body {
+    font-family: 'Juncture', sans-serif;
+    font-size:16px;
+    line-height:1.5;
+    
+
+}
+
+header {
+    position:fixed;
+    width:100%;
+    color:white;
+    background:rgb(125, 71, 0);
+    top:0; left:0;
+    padding:0.5rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-bottom:1px solid white;
+    z-index:100;
+}
+
+.header-right {
+    text-align:right;
+    margin-top:0.5rem;
+}
+
+
+h1 {
+    font-size:1.5rem;
+    
+}
+
+
+.year-nav {
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    justify-content:center;
+    padding:1rem;
+}
+
+button,
+.year-btn {
+    padding:0.5rem 1rem;
+    background:black;
+    color:white;
+    text-decoration:none;
+    font-family:inherit;
+    font-size:1rem;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover,
+.year-btn:hover {
+    background:rgb(125, 71, 0);;
+}
+
+.year-section,
+.preamble {
+    min-height:100vh;
+    padding-top:6rem;
+}
+.preamble {
+    text-align:center
+}
+
+.year-section h2 {
+    text-align:center;
+}
+
+
+.record {
+    max-width:400px;
+    margin:auto;    
+    padding-bottom:2rem;
+}
+
+
+footer {
+    position:fixed;
+    bottom:0; left:0;
+    width:100%;
+    padding:1rem;
+}
+
+#menu {
+    width:100vw;
+    height:100vh;
+    background:rgb(125, 71, 0);
+    position:fixed;
+    top:0; left:0;
+    color:white;
+    display:none;
+
+}
+
+.menu-content {
+    max-width:600px;
+    margin:auto;
+    padding:6em;
+}
