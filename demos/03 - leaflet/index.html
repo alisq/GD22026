@@ -10,120 +10,40 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
+        
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <!-- leaflet CSS-->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+       <!-- MapLibre CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/maplibre-gl@5.20.1/dist/maplibre-gl.css"
+  />
        
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+
+      <!-- MapLibre -->
+  <script src="https://unpkg.com/maplibre-gl@5.20.1/dist/maplibre-gl.js"></script>
+
+  <!-- Leaflet bridge for MapLibre -->
+  <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js"></script>
+
+
+  
+     <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         
+        <div id="map"></div>
 
-
-
-            
-            <div class="record" id="jawbreaker_24_hour_revenge_therapy">
-                <a href="https://jawbreakerband.bandcamp.com/album/24-hour-revenge-therapy" target="_blank">
-                <img src="img/jawbreaker_24_hour_revenge_therapy.jpg" alt="jawbreaker_24_hour_revenge_therapy">
-                </a>
-                <h3>Jawbreaker</h3>
-                <h4>24 Hour Revenge Therapy</h4>
-                <p>1994</p>
-            </div>
-        
-        
-        
-            
-            <div class="record" id="karp_suplex">
-                <a href="https://karp1.bandcamp.com/album/suplex" target="_blank">
-                <img src="img/karp_suplex.jpg" alt="karp_suplex">
-                </a>
-                <h3>Karp</h3>
-                <h4>Suplex</h4>
-                <p>1995</p>
-            </div>
-        
-            
-            <div class="record" id="dahlia_seed_survived_by">
-                <a href="https://dahliaseed.bandcamp.com/album/survived-by" target="_blank">
-                    
-                <img src="img/dahlia_seed_survived_by.jpg" alt="dahlia_seed_survived_by">
-                </a>
-                <h3>Dahlia Seed</h3>
-                <h4>Survived By</h4>
-                <p>1996</p>
-            </div>
-            
-            <div class="record" id="unwound_repetition">
-                <a href="https://unwound.bandcamp.com/album/repetition" target="_blank">
-                <img src="img/unwound_repetition.png" alt="unwound_repetition">
-                </a>
-                <h3>Unwound</h3>
-                <h4>Repetition</h4>
-                <p>1996</p>
-            </div>
-        
-        
-
-            
-            <div class="record" id="his_hero_is_gone_monuments_to_thieves">
-                <a href="https://www.youtube.com/watch?v=YdGE8fFtmwc" target="_blank">
-                <img src="img/his_hero_is_gone_monuments_to_thieves.jpg" alt="his_hero_is_gone_monuments_to_thieves">
-                </a>
-                <h3>His Hero Is Gone</h3>
-                <h4>Monuments to Thieves</h4>
-                <p>1997</p>
-            </div>
-
-            <div class="record" id="charles_bronson_youth_attack">
-                <a href="https://powerviolencearchive.bandcamp.com/album/youth-attack" target="_blank">
-                <img src="img/charles_bronson_youth_attack.jpg" alt="charles_bronson_youth_attack">
-                </a>
-                <h3>Charles Bronson</h3>
-                <h4>Youth Attack</h4>
-                <p>1997</p>
-            </div>
-        
-            
-            <div class="record" id="combatwoundedveteran_duck_down_for_the_torso">
-                <a href="https://combatwoundedveteran.bandcamp.com/album/duck-down-for-the-torso" target="_blank">
-                <img src="img/combatwoundedveteran_duck_down_for_the_torso.jpg" alt="combatwoundedveteran_duck_down_for_the_torso">
-                </a>
-                <h3>Combat Wounded Veteran</h3>
-                <h4>Duck Down for the Torso</h4>
-                <p>1998</p>
-            </div>
-        
-            
-            
-            
-            <div class="record" id="closure_self_titled">
-                <a href="https://www.youtube.com/watch?v=8az_KUGCqTI&t=1s" target="_blank">
-                <img src="img/closure_self_titled.jpg" alt="closure_self_titled">
-                </a>
-                <h3>Closure</h3>
-                <h4>Closure</h4>
-                <p>1999</p>
-            </div>
-            
-            <div class="record" id="orchid_chaos_is_me">
-                <a href="https://orchidband.bandcamp.com/album/chaos-is-me" target="_blank">
-                <img src="img/orchid_chaos_is_me.jpg" alt="orchid_chaos_is_me">
-                </a>
-                <h3>Orchid</h3>
-                <h4>Chaos Is Me</h4>
-                <p>1999</p>
-            </div>
-        
-            
-            <div class="record" id="shellac_1000_hurts">
-                <a href="https://shellac.bandcamp.com/album/1000-hurts" target="_blank">
-                <img src="img/shellac_1000_hurts.png" alt="shellac_1000_hurts">
-                </a>
-                <h3>Shellac</h3>
-                <h4>1000 Hurts</h4>
-                <p>2000</p>
-            </div>
-            
 
         <script src="js/script.js"></script>
     </body>
