@@ -7,7 +7,7 @@
 var map = L.map('map').setView([43.6530098,-79.3913045], 17);
 
 L.maplibreGL({
-  style: 'http://localhost:5500/demos/03%20-%20leaflet/js/style.json',
+  style: 'https://alisq.github.io/GD22026/demos/03%20-%20leaflet/js/style.json',
   maplibreGL: maplibregl
 }).addTo(map);
 
