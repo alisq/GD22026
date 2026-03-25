@@ -1,0 +1,140 @@
+/* Standard Book */
+@font-face {
+    font-family: 'Standard';
+    src: url('font/webfonts/standard-book-webfont.eot');
+    src: url('font/webfonts/standard-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfonts/standard-book-webfont.woff2') format('woff2'),
+         url('font/webfonts/standard-book-webfont.woff') format('woff'),
+         url('font/webfonts/standard-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Standard Book Italic */
+@font-face {
+    font-family: 'Standard';
+    src: url('font/webfonts/standard-book-italic-webfont.eot');
+    src: url('font/webfonts/standard-book-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfonts/standard-book-italic-webfont.woff2') format('woff2'),
+         url('font/webfonts/standard-book-italic-webfont.woff') format('woff'),
+         url('font/webfonts/standard-book-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Standard Bold */
+@font-face {
+    font-family: 'Standard';
+    src: url('font/webfonts/standard-bold-webfont.eot');
+    src: url('font/webfonts/standard-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfonts/standard-bold-webfont.woff2') format('woff2'),
+         url('font/webfonts/standard-bold-webfont.woff') format('woff'),
+         url('font/webfonts/standard-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Standard Bold Italic */
+@font-face {
+    font-family: 'Standard';
+    src: url('font/webfonts/standard-bold-italic-webfont.eot');
+    src: url('font/webfonts/standard-bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfonts/standard-bold-italic-webfont.woff2') format('woff2'),
+         url('font/webfonts/standard-bold-italic-webfont.woff') format('woff'),
+         url('font/webfonts/standard-bold-italic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family:'Standard';
+    background:#E0E1DD;
+    color:#081B2B;
+}
+
+header {
+    color:#E0E1DD;
+    background:#081B2B;   
+    text-align:center;
+    height:100px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    
+    
+}
+
+h1 {
+    font-size:36px;
+}
+
+main {
+    width:1300px;
+    margin:10rem auto;
+}
+
+img { 
+    max-width:100%;
+}
+
+.primary {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:20px;
+}
+
+.secondary {
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-column-gap:20px;
+}
+
+.single-album {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap:20px;
+}
+
+.two-up {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap:20px;
+}
+
+#badge {
+
+    position:fixed;
+    bottom:60px;
+    right:60px;
+    
+    color:#E0E1DD;
+    background:#081B2B;   
+    padding:1.5em;
+    font-weight:600;
+    border-radius:50%;
+    aspect-ratio: 1/1;
+    display:flex;
+    align-items: center;
+    font-size:30px;
+    width:160px;
+    text-align:center;
+    
+
+  animation: spin 10s linear infinite;
+  transition:opacity 0.2s;
+}
+
+#badge:hover {
+
+    opacity:0.3;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

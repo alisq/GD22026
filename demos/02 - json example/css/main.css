@@ -1,0 +1,28 @@
+img {
+    max-width:100%;
+}
+
+
+.filters {
+    text-align:center;
+    margin:4rem;
+}
+
+.all-albums {
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-column-gap:1em;
+}
+
+.movie-container {
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    margin:1em;
+    padding:1em;
+}
+

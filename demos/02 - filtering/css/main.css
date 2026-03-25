@@ -13,3 +13,11 @@ img {
     grid-template-columns:repeat(5, 1fr);
     grid-column-gap:1em;
 }
+
+img {
+        filter: grayscale(100%)
+    brightness(1.8)
+    contrast(4)
+    hue-rotate(90deg)
+    saturate(6);
+}
