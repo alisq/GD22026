@@ -1,3 +1,25 @@
-#map {
-    height:600px;
+html, body {
+    margin:0;
+    padding:0;
+    background:black;
+}
+
+iframe {
+    width:100vw;
+    height:100vh;
+    border:none;
+    position:fixed;
+    top:0;
+    left:0;  animation: spin 150s linear infinite;
+  transition:opacity 0.2s;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
